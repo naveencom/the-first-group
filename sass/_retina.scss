@@ -1,0 +1,59 @@
+
+/* Retina graphics ================================= !*/
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	   only screen and (min--moz-device-pixel-ratio: 1.5),
+	   only screen and (min-device-pixel-ratio: 1.5) {
+
+	
+	
+	.search-btn,
+	.social-links a,
+	.agent-list .agent-phone:before,
+	.white-gloves-list li:before,
+	.link-icon,
+	.enquires-search-btn,
+	.e-first-txt:after,
+	.close-mesg,
+	.edit-btn .edit-icon,
+	.social-share a,
+	.tick-icon,
+	.status-open-btn:before,
+	.status-open-btn:after,
+	.status-header:before,
+	.status-close-btn,
+	.status-list li:before,
+	.status-list li.status-done:before,
+	.print-icon,
+	.download-icon,
+	.filter-wrapper .search-btn,
+	.flip-close:after,
+	input[type="checkbox"]:checked + label .check-icon,
+	.travel-icon,
+	.wallet-icon,
+	.tab-content-point div.accord-title a:after,
+	.tab-content-point div.accord-title.open a:after,
+	.testmonial-content:before,
+	.tab-toggle,
+	.tab-toggle.tab-dropped,
+	.tfg-breadcrumb li:after {
+
+		background-image: url('../img/sprite@2x.png');
+		background-size: 177px 628px; /* The size of the normal sprte image (or) half the size of the hi-res image */
+	}
+
+	.properties-module {
+		.slick-prev { background-image: url(../img/prev@2x.png); }
+		.slick-next { background-image: url(../img/next@2x.png); }
+	}
+
+	select.form-control {
+		background-image: url(../img/select-arow@2x.png);
+		background-size: 11px 6px;
+	}
+
+	  
+        
+
+
+} // Media query ends here

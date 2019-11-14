@@ -1,0 +1,47 @@
+.user-wrap-bg{
+	background: url(../img/bg-pattern.jpg) repeat;
+    background-size: auto;
+}
+
+.login-form {
+    padding: 60px 0;    
+    h1{
+	    font-family: $gotham-font-regular;
+	    font-size: 2em;
+	    margin-bottom: 15px;
+    }
+}
+
+.form {
+  max-width:400px;
+  margin:0 auto;
+  background: #FFFFFF; 
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	label{
+		text-align:left;
+	}
+	.required{
+		display: block;
+	    margin-top: 10px;
+	    color:red;
+	    text-align:left;	     
+	}
+	.bg-success{
+		display: block;
+	    max-width: 350px;
+	    margin: 0 auto;   
+	    padding: 10px; 
+	    text-align: center;	     
+	}
+	.bg-danger{
+		display: block;
+	    max-width: 350px;
+	    margin: 10px 0 auto;   
+	    padding: 10px; 
+	    text-align: center;
+	    background: transparent;
+        color: red;
+	}
+} 

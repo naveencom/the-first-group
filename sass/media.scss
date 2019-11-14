@@ -1,0 +1,1396 @@
+
+@import 'variables';
+@import 'mixins';
+@import 'retina'; // Retina graphics
+
+
+
+
+/* =====================================================
+Responsive media queries starts here
+===================================================== */
+
+/* Large Screen - Design for a width of 1450px and above 
+--------------------------------------------------------- */
+@media only screen and ( min-width: $screen-large-lg  ) {
+
+	.properties-slider { max-width: 1152px; }
+			 
+} 
+
+
+/* Desktop Screen - Design for a width of 1449px to 992px 
+--------------------------------------------------------- */
+@media only screen and ( max-width: $screen-desktop-md ) {	
+
+	/* TABLE OF CONTENTS  
+	--------------------
+		- Home page
+			- Agents module
+			- White gloves
+			- New projects module
+			- Properties module 
+		- Contact page 
+		- User profile page 
+		- Property listing page
+		- Property landing page
+		- Services page common items
+		- Services - loyalty card page
+		- Services - Owner agents page
+		- Services - Titanium Rewards page
+		- Services - Travel Concierge page
+		- Search-result page
+		- Testimonial page
+	------------------------------------------*/
+
+	
+	/* home page 
+	=========================== */
+
+	/* Agents module  */
+
+	.agent-list {
+		.agent-content { padding: 24px 30px 0; }
+	}
+
+	/* White gloves */
+
+	.home-white-gloves-content {
+		&:after { border:0; } 
+	}
+
+	/* New projects module */
+
+	.new-projects-list li {
+		p { display: none; }
+	}
+
+	/* Properties module */
+
+	.property-name {
+	    font-size: 15px;
+	    width: 75%;
+	    padding: 15px;
+	}
+	.properties-slider { max-width: 765px; }
+
+	.properties-module { 
+		.slick-next {right: 20px;}
+		.slick-prev {left: 20px;}
+	}
+
+	/* Contact page -------------------------- */
+
+	.offices {padding-top: 40px;} 
+
+	/* User profile page -------------------------- */
+
+	.edit-info-wrap {
+		.cta {
+			min-width: 100%;
+			margin-right: 0;
+
+			+ .cta {margin-top: 10px;}
+		}
+	}
+	.edit-btn .txt {display: none;}
+	
+	.account-heading,
+	.my-profile-page .box-title {font-size: 20px;}
+
+	.my-profile-page {
+		.editable { padding-right: 85px !important;}
+	}
+
+	/* Property listing page -------------------------- */
+
+	.property-thumb .title {
+		font-size: 22px;
+		left: 25px;
+		bottom: 25px;
+	}
+	.property-info {padding: 25px; }
+	.property-action {padding: 25px 25px 0; }
+	.details-btn {margin: 20px; }
+
+	/* Property landing page -------------------------- */
+
+	.awards-wrap * {text-align: center;  }
+	.award-content {margin-bottom: 25px; }
+
+	.award-info ,
+	.award-img {
+		width: auto;
+		float: none;
+		margin: 0;
+	}
+	.award-img {margin-bottom: 15px; }
+
+	.prop-landing-sec {
+		.info-list {
+			width: auto;
+			float: none;
+			li:last-child {margin-bottom: 20px;}
+			&:last-child li:last-child {margin-bottom: 0}
+		}
+		.property-action { padding: 25px; }
+	}
+
+	/* Services page common items --------- */
+
+	.pic-box-wrapper {
+		p { width: 80%;}
+	}
+	.pic-box-title {padding: 0 17%;}
+
+	/* Services - loyalty card page --------- */
+
+	.loyalty-card-wrapper .table-block { min-height: 208px; } 
+
+	/* Services - Owner agents page --------- */
+
+	.owner-agents { 
+		.table-cell { padding: 5% 8%;} 
+	}
+	
+	/* Services - Titanium Rewards page -------------------------- */
+
+	.travel-title {font-size: 20px;} 
+
+	.travel-content-inner,
+	.travel-sec-top {
+		padding: 20px;
+	}
+
+	.travel-icon,
+	.wallet-icon {
+		right: 20px;
+	}
+
+	/* Services - Travel Concierge page -------------------------- */
+
+	.travel-concierge .form-info {font-size: 13px;}
+
+	/* Search-result page -------------------------- */
+
+	ul.search-result-list .search-result-thumbnail {
+	    float: left;
+	    width: 250px;
+	}
+	ul.search-result-list .search-result-description{margin-left:290px; }
+
+	/* Testimonial page -------------------------- */
+	
+	.grid-item {margin-bottom: 30px;}
+
+		 
+
+
+}
+
+/* Tablet Landscape - Design for a width of 991px to 768px 
+--------------------------------------------------------- */
+@media only screen and ( max-width: $screen-tablet-sm ) {
+	
+	/* TABLE OF CONTENTS  
+	--------------------
+	- Main footer 
+	- Full width video module 
+	- Home page
+		- New projects module 
+		- Properties module
+		- Agents module
+		- Whitegloves
+	- Contact page
+	- e-first page
+	- User profile page 
+	- Services page common items
+	- Services - loyalty card page
+	- Services - Titanium Rewards page
+	- Services - Travel Concierge page
+	- Property landing page
+	- Testmonials page
+	------------------------------------------*/
+
+
+	/* Main footer --------- */
+
+	.copy-right, 
+	.footer-links {
+		margin-bottom: 2em; 
+	}
+
+	/* Full width video module --------- */
+
+	.full-width-video {
+		height: 500px;
+		h3 {
+			font-size: 50px; 
+			line-height: 44px;
+		}
+	}
+	
+	/* home page 
+	====================== */
+
+	/* New projects module  */
+	
+	.new-projects-list li p {display: block;} 
+
+	/* Properties module */
+	
+	.properties-slider .slick-arrow {top: 43.5%;} 
+	
+
+	/* Agents module */
+
+	.agent-list {
+		.agent-content { padding: 24px 0 0; }
+	}
+
+	/* Whitegloves */
+
+	.home-white-gloves {
+		height: auto;
+
+		.table-cell.td-50 {
+			width: 100%;
+			min-height: 350px;
+			display: block;
+		}
+	}
+	.home-white-gloves-content {padding: 5em 5em 3em;}
+	.white-gloves-bg h3 {width: auto;} 
+
+	.home-white-gloves .v-align {
+		position: absolute;
+	    left: 50%;
+	    top: 50%;
+	    @include transform-translate(-50%, -50%);
+	}
+
+	/* Contact page ----------------- */
+	
+	#map-container {margin: 0 -20px;} 
+
+	/* e-first page --------------------------- */
+	
+	.enquires-search-form {
+		.checkbox-wrap, 
+		.form-group input, 
+		.form-group select {
+		    margin-bottom: 10px;
+		}
+
+		.form-group input:last-child {margin-bottom: 0;}
+	}
+
+	/* User profile page -------------------------- */
+
+	.edit-info-wrap {
+		.cta {
+		    margin-right: 10px;
+		    float: left;
+		    min-width: 48.5%;
+
+		    + .cta {margin-top: 0;}
+		}
+	}
+
+	.edit-btn .txt {display: inline-block;}
+
+	.account-heading,
+	.my-profile-page .box-title {font-size: 30px;}
+
+	.my-profile-page {
+		.editable { padding-right: 135px !important;}
+	}
+
+	/* Services page common items --------- */
+
+	.pic-box-wrapper {
+		.table-cell {padding: 5%;}
+		p { width: auto;}
+	}
+
+	.payment-options .table-cell,
+	.pic-box-title {padding: 0;}
+
+	/* Services - loyalty card page --------- */
+
+	.loyalty-card-wrapper .table-block {min-height: 0;}
+	.card-image, .card-content {text-align: center;}
+	.loyalty-card-wrapper {margin-bottom: 40px;}
+	.card-content {padding-bottom: 20px;}
+ 
+	/* Services - Titanium Rewards page -------------------------- */
+
+	.titanium-wrapper {
+		.table-cell {padding: 5%; }
+	}
+	.travel-title {font-size: 30px;} 
+
+	.travel-content-inner,
+	.travel-sec-top {
+		padding: 40px;
+	}
+	.travel-content-inner {padding-bottom: 15px;} 
+
+	.travel-icon,
+	.wallet-icon {
+		right: 40px;
+	}
+
+	/* Services - Travel Concierge page -------------------------- */
+
+	.travel-concierge {
+		label {margin-bottom: 10px;}
+		&.form-group .row {padding-bottom: 0;}
+		.radio-box {padding-top: 0;}
+		.form-info {margin-top: 30px;}
+		.form-control {margin-bottom: 15px;}
+	}
+
+	/*  Property landing page -------------------------- */
+
+	aside  { 
+		.overflow-table { margin-right: 0; }
+		.box-top {
+		    text-align: center;
+		    padding: 25px;
+		}
+	}
+
+	.construction-gallery h2.title,
+	.prop-landing-sec .heading,
+	.box-title {
+		font-size: 25px;
+	} 
+
+	.filter-wrapper {
+		.filter-col {width: 46.5%;}
+	}
+	.table-box .overflow-table {margin-right: -1px;}
+
+	/* Testmonials page -------------------------- */
+
+	.testmonial-form {
+		.form-group .row {padding-bottom: 0;}
+		.form-control {margin-bottom: 10px;}
+	}
+
+	.gutter-sizer { width:4%; }
+
+	.grid-sizer,
+	.grid-item {
+	    width: 48%;
+	}
+
+	.grid-item { margin-bottom: 30px; }
+
+
+
+
+}
+
+/* Mobile Portrait - Design for a width of 769px and below 
+--------------------------------------------------------- */
+@media only screen and ( max-width: $screen-mobile-xs ) {
+
+	/* TABLE OF CONTENTS  
+	--------------------
+	- Common elements
+		- Form elements 
+		- Full width video module
+		- Main header
+		- Main menu section 
+		- Header banner
+		- Main Footer 
+	- Home page 
+		- Whitegloves
+		- New projects module 
+		- Properties module
+		- Agents module
+		- E-first section 
+	- Services page common items
+	- Services page - Tab navigation 
+	- Services - owner privileges page
+	- Services White Glove page - E-First module
+	- Services - owner agents page
+	- Services - Payment options page
+	- Services - Titanium Rewards page
+	- Services - travel-concierge page
+	- Services - loyalty cards page
+	- Properties listing page
+	- Property landing page
+	- Search-result page
+	- Contact page 
+	- E-first page 
+	- User profile page
+	- News page
+	- Testimonials page 
+	------------------------------------------*/
+
+	/* Common elements --------- */
+
+	.content-area {padding: 30px 0;}
+
+	.copy-right,
+	.footer-links,
+	.social-links,
+	.design-by,
+	.user-name2 {
+		display: block;
+	}
+
+	.cta.large {padding: 15px 30px;}
+
+	.v-align {
+		position: absolute;
+	    left: 50%;
+	    top: 50%;
+	    @include transform-translate(-50%, -50%);
+	}
+	
+	/* Form elements */
+	
+	.checkbox-wrap,
+	.form-group input,
+	.form-group select { margin-bottom: 10px; }
+
+	.radio-box {
+		label {padding-top: 5px;}
+		.check {top: 0;}
+	}
+
+	/* Full width video module  */
+
+	.full-width-video {
+		height: 385px;
+		h3.title {
+			font-size: 34px; 
+			line-height: 35px;
+		}
+		.date {
+			font-size: 20px;
+			margin-bottom: 30px;
+		}
+	}
+
+
+	/* Main header --------- */
+	 
+	#main-header {padding: 20px;}
+
+	.tfg-logo {
+		width: 72px; 
+		border: 0;
+		padding: 0;
+		margin: 0;
+	}
+	.main-menu .wrapper{ padding: 20px 20px 30px 20px; }
+
+	.header-banner.height450,
+	.header-banner.height370 { 
+		min-height: 0; 
+		p.sub-text {font-size: 14px;}
+	}
+
+	.header-banner.home .title-block .title {
+		font-size: 34px; 
+	    margin-bottom: 25px;
+	    &:after {margin-top: 25px;}
+	}
+	
+	/* Main menu section -------- */
+
+	.main-menu.menu-opened {overflow-y: auto;}
+
+	.user-name {display: none;}
+	.menu-icon {margin-top: 5px;}
+	.main-menu {top: 70px; }
+ 
+	.main-menu .wrapper,
+	.change-lang, 
+	.sub-menu {
+		text-align: center;
+	}
+
+	.change-lang, 
+	.sub-menu {
+		float: none; 
+		width: 100%;
+	}
+	.sub-menu {
+		display: inline-block;
+	    margin-bottom: 2em;
+	}
+
+	.social-links a:last-child,
+	.sub-menu a:last-child{ margin-right: 0;}
+	
+	.search-form,
+	.menu-links a { margin-top: 30px}
+
+	.search-form  {
+		:-moz-placeholder {font-size: 14px;}
+		::-webkit-input-placeholder {font-size: 14px;}
+		::-moz-placeholder {font-size: 14px;}
+		:-ms-input-placeholder {font-size: 14px; }
+	}
+
+	.user-name2 {
+		line-height: 1;
+	    margin-bottom: 2em;
+	    display: block;
+	}
+
+	/* Header banner --------------- */
+
+	.header-banner.inner,
+	.header-banner {
+		padding: 100px 25px 0; 
+		min-height: 0;
+	}
+	.header-banner.home {
+		padding-top: 100px;
+		padding-bottom: 10px;
+	}
+
+	.title-block .title.inner, 
+	.title-block .title {
+		font-size: 24px;
+		margin-bottom: 25px;
+	    line-height: 1.3;
+
+		&:after { margin: 18px auto 0 auto; }
+	}
+
+	.header-banner.height450 .title {font-size: 35px;}
+
+	.header-banner {
+		.title-block .title {
+			font-size: 28px;
+			margin-bottom: 30px; 
+			&:after { margin: 21px auto 0 auto; }
+		}
+	}
+
+	.sub-text-bold {
+		font-size: 16px;
+		margin-bottom: 1em;
+	}
+
+	/* Main Footer --------------- */
+
+	.footer-links, .copy-right {margin-right: 0; }
+	.social-links {margin-bottom: 2em; }
+
+	/* Home page 
+	============================= */
+
+
+	/* Whitegloves  */
+
+	.white-gloves-bg  {
+		// min-height: 0 !important;;
+		min-height: 270px !important; 
+		h3 {font-size: 34px; }
+	}
+
+	.white-gloves-list li {
+		width: 100%; 
+		padding-bottom: 30px;
+	}
+
+	.home-white-gloves-content {
+	    padding: 30px 2em 1em;
+		p {margin-bottom: 2em;}
+		&:after {content: none; }
+	}
+
+	/* New projects module  */
+
+	.new-projects-module {
+		padding: 40px 0 47px; 
+		.title-block .title {font-size: 34px;}
+	}
+
+	.new-projects-list li {
+		border-bottom: 1px solid #E5E5E5;
+		margin-bottom: 1.5em;
+
+		.item {margin-bottom: 30px;}
+		h4 {margin-bottom: 15px; }
+		.table-cell {width: 100%;}
+		.p-content {padding:0; }
+		&:last-child {border: 0}
+	} 
+	.project-img {display: none;}
+
+	/* Properties module  */
+
+	.properties-slider { width: 75%; }
+	.property-slider-cta-wrap {margin-top: 30px;}
+
+	.properties-module {
+		padding: 30px 0;
+
+		.title-block .title {
+			font-size: 34px;
+			margin-bottom: 30px;
+		}
+		.slick-arrow {
+			width: 15px;
+			height: 30px;
+		}
+		.slick-prev {left: 20px;}
+		.slick-next {right: 20px;}
+	}
+
+	/* Agents module  */
+
+	.agents-module {padding: 20px 0 40px;}
+	.agents-wrapper .slick-slide{padding: 0 10px; }
+
+	.agent-list {
+		.agent-content {padding: 24px 0 0;}
+	}
+	
+	/* E-first section  */
+
+	.e-first-module {
+		padding-bottom: 60px;
+		h4 {font-size: 24px;}
+	}
+ 
+
+	/* Services page common items --------- */
+
+	.title-area { padding-top: 30px; }
+
+	.pic-box-wrapper  { 
+
+		.table-block { 
+			display: block; 
+			height: auto;
+		}
+
+		.table-cell.td-50 {
+			width: 100%;
+			min-height: 0;
+			padding: 0;
+		    height: auto;
+			display: block;
+			position: relative;
+		}
+
+		.title-wrapper { 
+			display: table;
+			min-height: 126px;
+			width: 100%;
+		}
+	}
+	
+	.entry-title,
+	.pic-box-title { font-size: 24px; }
+	
+	.titanium-wrapper .pic-box-title,
+	.services .pic-box-title {
+		padding: 20px;
+		display: table-cell;
+		vertical-align: middle;
+		height: 100%;
+		width: 100%;
+	}
+
+	.box-content {
+		background: #fff;
+		color: #000 !important;
+		padding: 20px;
+
+		p {color: #000 !important; }
+	}
+	
+	/* Services page - Tab navigation --------- */
+
+	.tab-active-page {display: block;}
+
+	.top-tab-nav {
+		display: none;
+		position: absolute;
+		height: auto;
+	    top: 100%;
+	    left: 0;
+ 
+		a { 
+			top: 0;
+			display: block;
+			width: 100% !important;
+			font-size: 14px;
+			text-align: left;
+			float: left;
+			padding: 21px 25px;
+			margin: 0;
+
+			&:hover {
+				background: #000;
+				color: #fff;
+			}
+		}
+
+		a.tab-active { display: none; }
+	}
+
+	.header-tab-nav { height: 58px; }
+	.tab-toggle {display: inline-block;}
+	
+	/* Services - owner privileges page --------- */
+
+	.owner-privileges {
+		.table-cell.td-50 {padding: 40px 25px; }
+		.table-cell.td-50:first-child {margin-bottom: 2px;}
+	}
+	
+	/* Services White Glove page - E-First module --------- */
+
+	.service-efirst {
+		padding-bottom: 30px;
+		margin-top: 70px;	
+	} 
+
+	/* Services - owner agents page --------- */
+
+	.owner-agents { 
+		min-height: 0;
+		.inner-content {padding-bottom: 15px;}
+
+		.table-cell.td-50 { 
+			padding: 0 10% 0;
+			min-height: 0;
+			height: auto;
+
+			&.strech-bg {min-height: 300px;}
+		}
+	}
+
+	.owner-agents-secondary { 
+		margin-top: 0; 
+		padding: 50px 10px 20px;
+	}
+
+	.secondary-section {
+		padding-top: 30px;
+		margin-top: 0;
+
+		.form-group h5 {
+			padding-bottom: 15px;
+			font-size: 15px;
+		}
+
+		.form-group .row:nth-last-child(2),
+		.form-group .row {
+			padding-bottom: 20px;
+		}
+	}
+
+	/* Services - Payment options page --------- */ 
+
+	.flip-valign {padding: 5% 10%;}
+	.office-img{width:100%; }
+
+	.payment-options {
+		height: auto;
+
+		.pic-box-title {
+			min-width: auto;
+			margin-bottom: 20px;
+		}
+
+		.table-cell.td-50 {
+			height: 400px; 
+			margin-bottom: 2px;
+			&:last-child {margin: 0;}
+
+			&.strech-bg { 
+				width: 100%;
+				display: table;
+			}
+		}
+
+		.inner-cell {
+			display: table-cell;
+			height: 100%;
+			vertical-align: middle;
+			text-align: center;
+		}
+	}
+
+	/* Services - Titanium Rewards page -------------------------- */
+
+	.titanium-wrapper .v-align {
+		width: 90%;
+	    left: inherit;
+	    transform: none;
+	    @include transform-translateY(-50%);
+	}
+
+	.travel-icon,
+	.wallet-icon {
+		right: 20px;
+	}
+	
+	.package-price,
+	.travel-title {font-size: 24px;}
+	
+	.tab-content-point:last-child,
+	.titanium-tabs-wrapper{margin-bottom: 0;}
+
+	.tablist {display: none; }
+
+	.choose-wrapper {
+		height: 150px;
+		padding: 0 10%;
+	    margin-bottom: 2px;
+		.title {font-size: 35px;}
+	}
+
+	.travel-content {margin-bottom: 20px;}
+
+	.travel-content-inner, 
+	.travel-sec-top {
+	    padding: 20px;
+	}
+
+	.titanium-tabs-wrapper .tab-content-point,
+	.titanium-tabs-wrapper .tab-content-point div.accord-title {
+		display: block;
+	}
+
+	.titanium-tabs-wrapper .tab-content-point div.accord-content {
+	    display: none;
+	    margin-top: 20px;
+	}
+
+	.exclusive { border-top: 1px solid #e5e5e5; }
+
+	/*  Services - travel-concierge page -------------------------- */
+
+	.service-form-travel { 
+		padding-top: 20px;
+		padding-bottom: 30px;
+		margin-top: 0;
+
+		.cta {margin-top: 2em;}
+		.form-group .row {padding-bottom: 0;}
+	}
+
+	/* Services - loyalty cards page -------------------------- */
+
+	.loyalty-card-wrapper { 
+		margin-bottom: 20px; 
+		&:nth-last-of-type(1) { margin-bottom: -1px;}
+	}
+
+	.card-content h2 {  
+	 	margin-bottom: 20px; 
+	 	font-size: 16px;
+	}
+
+	.card-info {margin-bottom: 10px;}
+	.card-content {padding-bottom: 10px;} 
+	
+	
+	/* Properties listing page ------------------------ */
+
+	.header-banner.prop-header {
+		padding-top: 100px;
+		min-height: 230px;
+	}
+
+	.info-list {
+		width: auto;
+		float: none;
+	}
+	.info-list li:last-child {margin-bottom: 20px;}
+	.info-list:last-child li:last-child {margin-bottom: 0}
+	.property-info {padding:20px 20px 10px;}
+	.properties-info-wrap {margin-bottom: 20px;}
+	.property-action strong { display: inline-block; } 
+
+	.properties {
+		padding-top: 20px;
+
+		.container {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.row {margin: 0;}
+		.col-xs-6 {padding: 0 10px 0 10px; }
+	}
+
+	.property-thumb .title {
+		left: 20px;
+		bottom: 20px;
+	}
+	.property-action {padding: 20px 20px 0;}
+
+	/* Property landing page -------------------------- */
+
+	.visit-btn { margin: 0 0 25px 0; }
+
+	.prop-landing-sec {
+		.property-info {padding: 25px; }
+		.box-title {margin-right: 0;}
+		.box-top {
+			text-align: left;
+			padding: 20px;
+		}
+	} 
+
+	.status-open-btn {
+		position: static;
+	    width: 100%;
+	    font-size: 14px;
+	}
+	.status-header .title {font-size: 14px;}
+	
+	.table-box, 
+	.awards-wrap,
+	.personal-stay, 
+	.payment-staus {
+		margin-bottom: 40px;
+	}
+	aside .overflow-table { margin-right: -1px; }
+
+	.download-btn {display: block;}
+	.print-btn {display: none;}
+
+	.filter-wrapper {
+		margin-top: 0;
+		.filter-col {width: 46%;}
+	}
+
+	.table-box .overflow-table { margin-right: -25px; }
+
+	.pl-page { 
+		.cta:first-child {margin-bottom: 20px;}
+		.properties-slider .slick-arrow {top:42%;}
+	}
+	.awards-wrap {padding: 20px;}
+	.prop-landing .tfg-breadcrumb {
+		padding-top: 20px; 
+		padding-bottom: 20px;
+	}
+	.pl-page .title-block .title {font-size: 25px;}
+
+	/* Search-result page -------------------------- */
+
+	ul.search-result-list {
+		padding-top: 30px;
+
+		.search-result-thumbnail {
+		    float: left;
+		    width: 230px;
+		}
+
+		.search-result-description { margin-left: 250px; }
+
+		li + li {
+		    padding-top: 20px;
+		    margin-top: 20px;
+		}
+	}
+	
+	/* Contact page -------------------------- */
+
+	.offices {padding-top: 20px;}
+	.headquarters {
+		padding-top: 0;
+		.container {border: 0;}
+	}
+	.headquarters-address {
+	    height: auto;
+	    padding: 40px 0;
+	}
+
+	.office-name {
+		left: 20px;
+		bottom: 20px;
+	}
+	.office-address {padding: 20px;}
+	.enquires {padding: 50px 0 30px 0;}
+
+	.office-name,
+	.headquarters-address h4 {font-size: 24px;}
+	#map-container {margin: 0;}
+
+	.contact-page {
+		padding: 30px 0;
+		.form-group .row {padding-bottom: 0;}
+	}
+
+	.efirst-title {font-size: 30px;}
+	.e-first-wrappers:after {margin: 26px auto 20px;}
+
+	/* E-first page -------------------------- */
+
+	.enquires-search-form {padding: 30px 0 0;}
+	.e-first-wrap {padding-bottom: 20px;}
+	.e-first-txt {
+		padding: 20px;
+		min-height: 0;
+	}
+
+	.e-first {
+		.col-sm-6 {
+			float: none;
+			width: auto;
+		}
+	}
+
+	/* User profile page -------------------------- */
+
+	.user-info-wrap,
+	.edit-info-wrap,
+	.account-heading { padding: 20px; }
+
+	.user-info-box,
+	.account-box {margin-bottom: 20px;}
+
+	.user-info-box { 
+		.box-top {padding: 20px; }
+		.box-title { text-align: left; }
+	}
+
+	.edit-info-wrap .cta {min-width: 48%;}
+	.edit-btn {right: 20px;}
+
+	.account-heading, 
+	.my-profile-page .box-title {font-size: 24px;}
+
+	.my-profile-page {
+		padding-top: 20px;
+		.tfg-table th, 
+		.tfg-table td {
+			padding-left: 20px;
+		}
+	}
+	
+	/* News page ---------------------- */
+
+	.content-wrapper {padding-top: 20px;}
+
+	.news-listing {
+		padding: 20px 0 30px;
+		.row {
+			margin-left: -10px;
+		    margin-right: -10px;
+		    .col-xs-6 {
+		    	padding-left: 10px;
+	    	    padding-right: 10px;
+		    }
+		}
+	}
+	.news-entry {margin-bottom: 20px;}
+
+	
+	/* Testimonials page ---------------------- */
+
+	.testmonial-content { padding: 65px 20px 20px; }
+	.testmonial { padding-top: 30px;}
+
+	.testmonial-form {
+		padding-top: 0;
+		margin-top: 0;
+
+		h3 {padding-top: 30px;}
+	}
+	
+}
+
+
+// ------------ Custom Breakpoints ----------
+
+/* Mobile Portrait - Design for a width of 480px and below 
+--------------------------------------------------------- */
+@media only screen and ( max-width: $screen-mobile-xs2 ) { 
+
+
+	/* TABLE OF CONTENTS  
+	--------------------
+	- Common Elements 
+	- Breadcrumb
+	- Home Page - Properties Module
+	- Properties Listing Page
+	- Properties Landing Page
+	- Search-result Page
+	- Services - Titanium Rewards Page
+	- Services - Travel-concierge Page
+	- Contact Page
+	- News Listing Page
+	- My Profile Page
+	------------------------------------------*/
+	
+	/* Common elements -------------- */
+
+	.content-area { 
+		.cta {padding: 14px 20px;}
+	}
+
+	.container .single-xs {
+		width: auto;
+		float: none;
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.two-column  {
+		-webkit-columns: auto auto;
+	    -moz-columns: auto auto; 
+	    columns: auto auto;
+	}
+
+	.form { padding: 20px; } 
+
+	#main-header.panel-opened { position: fixed; }
+
+	/* Breadcrumb -------------- */
+
+	.tfg-breadcrumb {
+	    // padding: 20px 0;
+	    // margin: 0 auto -18px;
+	    text-align: left;
+	    -webkit-transform: translate3d(0, 0, 0);
+	    -moz-transform: translate3d(0, 0, 0);
+	    transform: translate3d(0, 0, 0);
+	    display: inline-block;
+	    // display: block;
+
+	    ul {
+	        display: inline-block;
+	        width: auto;
+	        text-align: center;
+	        white-space: nowrap;
+	    }
+	    li:after { margin-top: -6px;}
+	}
+
+	.menu-links a {font-size: 25px;}
+
+	/* Home page - Properties module -------------- */
+
+	.properties-slider {width: 215px; }
+	
+	/* Properties listing page -------------- */
+
+	.header-banner.height370.prop-header {
+		min-height: 290px;
+		padding-top: 104px;
+
+		.wrapper { max-width: 280px; }
+	}
+
+	.properties {
+		padding-top: 10px;
+
+		.container {
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+		.row {margin: 0;}
+		.col-xs-6 {padding: 0 5px 0 5px; }
+	}
+	.properties-info-wrap { margin-bottom: 10px; }
+
+	.details-btn,
+	.properties-info-wrap .property-info {display: none;}
+	
+	.property-thumb .title {
+		text-align: center;
+		font-size: 15px;
+	    bottom: auto;
+		top: 50%;
+		left: 50%;
+		right: 0;
+		word-wrap: normal;
+		@include transform-translate( -50%, -50% ); 
+ 	}
+
+ 	.property-action {
+ 		padding: 25px;
+ 		text-align: center;
+	    display: block;
+	    strong { display: block; }
+ 	}
+ 	.status, 
+ 	.tick-icon {
+ 		display: inline-block;
+ 		padding: 0;
+ 	}
+ 	.status { 
+ 		margin-top: 10px; 
+	    line-height: 1.4;
+ 	}
+
+	/* Properties landing page -------------- */
+
+	.prop-landing-sec { 
+		padding-top: 20px;
+		.status {margin: 0 0 0 20px;}
+	}
+
+	.status-open-btn {left: 0; }
+	.status-content {width: 100%;}
+
+	.box-title {
+		text-align: center;
+		font-size: 24px;
+	}
+	.filter-wrapper { 
+		margin-bottom: 20px;
+		.filter-col {margin-bottom: 10px;}
+	}
+
+	.properties-module .pl-page .cta {
+		display: block;
+		margin-right: 0;
+		font-size: 13px;
+	}
+	.construction-gallery h2.title {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	
+	.construction-gallery,
+	.table-box, 
+	.awards-wrap,
+	.personal-stay, 
+	.payment-staus {
+		margin-bottom: 20px;
+	}
+
+	.pl-page {
+		.property-slider-cta-wrap .cta {
+			display: block;
+			margin-right: 0;
+			padding: 14px 0;
+
+			&:first-child {margin-bottom: 10px;}
+		}
+	}
+
+
+	/* Search-result page -------------- */
+
+	ul.search-result-list {
+
+		.search-result-thumbnail{
+			width:100%;
+			float: none;
+			margin-bottom: 1em;
+		}
+
+		.search-result-description{margin-left:0; }
+
+		li + li {
+			padding-top: 20px;
+			margin-top: 15px;
+		}
+	}
+	.search-meta {margin-bottom: 15px;}
+
+	/* Services - Titanium Rewards page -------------- */
+
+	.travel-title {font-size: 20px;} 
+
+	.travel-content-inner,
+	.travel-sec-top {
+		padding: 20px;
+	}
+	.travel-content-inner {padding-bottom: 0;} 
+
+	.travel-content {
+		.title { margin-bottom: 10px;}
+		ul li {margin-bottom: auto;}
+	}
+	.choose-wrapper .title { font-size: 24px; }
+	
+	/* services-travel-concierge page -------------- */
+
+	.service-form-travel {padding-top: 20px;}
+
+	/* contact page -------------- */
+
+	.office-info-wrap {padding-bottom: 20px;}
+
+	/* News listing page -------------- */
+
+	.entry-title {margin-bottom: 20px;}
+
+	.news-listing {
+		padding: 20px 0; 
+		.row {
+			margin-left: -20px;
+		    margin-right: -20px;
+		    .col-xs-6 {
+		    	padding-left: 20px;
+	    	    padding-right: 20px;
+		    }
+		}
+	}
+
+	/* My profile page -------------- */
+
+	.account-heading, 
+	.my-profile-page .box-title {
+	   font-size: 20px;
+	}
+
+
+
+
+}
+@media only screen and ( max-width: 445px ) { 
+	
+	/* Properties landing page -------------------------- */ 
+
+	aside .overflow-table { margin-right: -10%; }
+
+}
+
+@media only screen and ( max-width: 360px ) { 
+	
+	/* User profile page -------------------------- */
+
+	.edit-info-wrap {
+		.cta {
+			min-width: 100%;
+			margin-right: 0;
+
+			+ .cta {margin-top: 10px;}
+		}
+	}
+	
+}
+
+@media only screen and ( max-width: 600px ) {
+
+	/* testmonial-grid -------------------------- */
+
+	.grid-item {
+	    width: 100%;
+	    margin-bottom: 30px;
+	    position: relative !important;
+	    top: 0 !important;
+	}
+
+	.testmonial-form h3 {padding-top: 20px;}
+
+	.testmonial-content{	
+		&:before{			
+		    left: 40px;		   
+		    top: -13px;
+		}		
+	}		
+}	

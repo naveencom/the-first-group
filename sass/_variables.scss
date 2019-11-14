@@ -1,0 +1,42 @@
+$gotham-font-thin			: 'Gotham thin', sans-serif;
+$gotham-font-light			: 'Gotham Light', sans-serif;
+$gotham-font-bold			: 'Gotham Bold', sans-serif;
+$gotham-font-regular		: 'Gotham Regular', sans-serif;
+$gotham-font-medium			: 'Gotham Medium', sans-serif;
+
+$proxima-font				: 'Proxima', sans-serif;
+
+$base-font					: $gotham-font-regular;
+$heading-font				: $gotham-font-light;
+
+$base-font-color			: #000;
+$body-bg					: #fff;
+$img-path					: '../img';
+
+// ============== Colors ==================
+ 
+$white						: #fff;
+$black						: #000;
+$success-color				: #1ba261; 	// Form validation success
+$error-color				: #dd5044;  // Form validation error
+
+$overlayBoxBg				: #5a5a5a; 	// Model popup overlay bg
+$selection-bg				: #000; 	// Mouse selection bg
+$selection-text-color		: #fff; 	// Mouse selection text color
+$col-placeholder			: #555555; 	// Form input placeholder
+$aside-nav-bg				: #002e5a; 	// Loader
+
+$commmon-link-color			: #000;
+$commmon-link-hover-color 	: grey;
+$content-heading-color		: #000; 	// Inner page heading color
+
+$font-size-base				: 14px; 
+
+// ========= Media Query Break Points ======= 
+
+$screen-large-lg 			: 1450px; 
+$screen-desktop-md 			: 1449px; 
+$screen-tablet-sm 			: 991px;  
+$screen-mobile-xs 			: 768px;  
+$screen-mobile-xs2 			: 480px;
+$mobile-screen-s 			: 600px;

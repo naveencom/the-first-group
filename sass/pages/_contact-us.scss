@@ -1,0 +1,92 @@
+/* contact us page ---------------------------- */
+.headquarters {
+	padding: 45px 0 0 0; 
+	.container {border: 1px solid #e5e5e5;}
+}
+
+.gm-style {z-index: 3 !important;} // google map override
+
+// .contact-page .form-group .row { padding-bottom: 0; }
+
+.headquarters-address {
+	padding: 0;
+	height:400px;
+
+	h4 {
+	    font-size: 30px;
+	    padding-bottom: 35px;
+	    margin-bottom: 0;
+	}	
+	p{
+	    margin-bottom: 13px;
+	    font-size: 14px;
+
+	    &:last-child {margin-bottom: 0;}
+	}
+	.table-cell{ text-align:left; }
+	.inner-cell {
+		max-width: 300px;
+		margin: 0 auto;
+	}
+}
+
+#map-container{ 
+	height: 400px;
+	background: #ccc;
+    margin-right: -21px;
+    z-index: 88 !important;
+}
+
+.enquires {
+   padding: 70px 0 35px 0;
+
+   .form-group {margin-bottom: 0;}
+
+   .required{
+		display: none;
+	    margin-top: 15px;
+	    color:red;	     
+	}
+}
+
+.bg-success {
+    max-width: 350px;
+    margin: 0 auto;   
+    margin-top: 2em;
+    padding: 10px; 
+    text-align: center;	  
+    display: none;   
+}
+
+
+.offices {
+	padding: 70px 0 0 0;
+	border-top: 1px solid #ebebeb;
+		
+	.cta {
+		width:100%;
+		min-width: auto;
+		margin:35px 0 1px 0;
+	}
+}
+.office-info-wrap { padding-bottom:40px; }
+
+.office-address {
+	padding: 40px;
+    border: 1px solid #e5e5e5;
+}
+
+.office-thumb {position: relative;} 
+
+.office-name {
+	font-size: 30px;
+	text-align: left;
+    position: absolute;
+    z-index: 1;
+    left: 40px;
+    bottom: 40px;
+    color: #fff;
+    margin: 0;
+    text-shadow: 1px 1px 8px rgba(0,0,0,0.3);
+}
+

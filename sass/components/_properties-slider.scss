@@ -1,0 +1,71 @@
+
+/* Properties carousal slider - Refer: Home page ---------------------- */
+
+.properties-module {
+	padding: 71px 0 100px;
+    text-align: center;
+}
+
+.property-slider-wrap {position: relative;}
+.property-slider-cta-wrap { margin-top: 100px; }
+
+
+.properties-slider {
+	max-width: 1152px;
+	margin: 0 auto;
+	position: static;
+ 
+	li {
+		position: relative;
+		padding: 0 10px;
+ 
+		a:hover {
+			background-color: #000;
+			color: #fff;
+		}
+	} 
+	img {margin: 0 auto;}
+}
+
+.property-name {
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 16px;
+	background: #fff;
+	width: 200px;
+	font-size: 16px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 1;
+	@include transform-translate(-50%, -50%);
+
+} 
+
+.properties-module {
+
+	.slick-arrow {
+		z-index: 1;
+		position: absolute;
+		width: 30px;
+		height: 60px;
+		top: 50%; 
+		cursor: pointer;
+		background-size: contain;
+		background-repeat: no-repeat;
+		
+		@include transform-translate(0, -50%);
+		@include transition( all 0.3s ease-in-out );
+	}
+	.slick-prev {
+		left: 45px;
+		background-image: url(../img/prev.png);
+	}
+	.slick-next {
+		right: 45px; 
+		background-image: url(../img/next.png);
+	}
+
+	.slick-arrow:hover { opacity: 0.5; }
+}
+ 

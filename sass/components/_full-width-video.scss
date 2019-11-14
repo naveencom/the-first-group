@@ -1,0 +1,27 @@
+
+/* Full width video module - Refer: Home page ----------------------- */
+
+.full-width-video {
+	background-repeat 	: no-repeat;
+	background-size 	: cover;
+	height 				: 700px;
+	width 				: 100%;
+	color 				: #fff;
+
+	.table-block {padding: 0 2em; }
+
+	h3.title {
+	    font-size 		: 70px;
+	    line-height 	: 74px;
+	    max-width 		: 780px;
+	    font-family 	: $gotham-font-thin;
+	    text-shadow: 1px 1px 8px rgba(0,0,0,0.3);
+	}
+	.date {
+		font-size 		: 30px;
+		font-family 	: $gotham-font-medium;
+		text-transform 	: uppercase;
+	    margin-bottom 	: 50px;
+	    text-shadow: 1px 1px 8px rgba(0,0,0,0.3);
+	}
+}

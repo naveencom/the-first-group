@@ -1,0 +1,350 @@
+
+@import 'variables';
+@import 'mixins';
+
+
+
+/*  ==========================================================================
+	Form Controls
+	========================================================================== */
+
+@mixin checkRadio() {
+	width 				:auto;
+	height 				:auto;
+	position 			:relative;
+	outline 			:none;
+	border 				:solid 1px #d7d7d7;
+	margin 				:0 5px 0;
+	background 			:#fff;
+
+	-moz-appearance  	:none;
+	-webkit-appearance  :none;
+	-ms-appearance  	:none;
+	-o-appearance  		:none;
+	appearance  		:none;
+	
+	width 				:20px;
+	height 				:20px;
+}
+@mixin checkRadioafter{
+	line-height 	:18px;
+	left 			: 1px;
+	text-align 		: center;
+	width 			: 15px;
+	height          : 15px;
+	color 			: #ccc;
+	position 		: absolute;
+	left 			:0;
+	right 			:0;
+	top 			:0;
+	bottom 			:0;
+	margin 			:auto;
+	border          :0;
+}
+
+input,
+select,
+textarea{
+	font-size 	:14px;
+	color 		:#4c4c4c;
+	padding 	:8px 12px;
+	border 		:solid 1px #cdcdcd;
+	border 		:0;
+}
+
+textarea{
+	height 	:auto;
+	padding :12px;
+	resize 	:vertical;
+	resize: none;	
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select,
+select:focus,
+textarea,
+textarea:focus {
+	outline: none;
+	display :block;
+	width 	:100%;
+	min-height: 40px;
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+
+select:-moz-focusring { 
+	color: transparent; 
+	text-shadow: 0 0 0 #000; 
+}
+
+
+// Custom checkbox styling -------------------------------------
+
+.checkbox-wrap { position: relative; }
+
+.checkbox-wrap label { 
+	font-size: 14px; 
+	padding-left: 40px;
+    position: relative;
+    padding-top: 0;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    min-height: 26px;
+    margin-bottom: 0;
+}
+
+input[type="checkbox"] {
+	display: none;
+	&:focus {outline: none; }
+
+	+ label .check-icon {
+		z-index: 1;
+	    position: absolute;
+        left: 0;
+        top: 0;
+
+	    display: inline-block;
+	    width: 26px;
+	    height: 26px;
+	    background: #f0f0f0;
+	    cursor: pointer;
+	}
+
+	&:checked + label .check-icon { 
+		background: #f0f0f0 url('../img/sprite.png') -123px -108px no-repeat; 
+	}
+}
+
+ 
+input[type="radio"] {
+	@include checkRadio;
+	@include border-radius(50%);
+}
+input[type="radio"]:hover:before,
+input[type="radio"]:checked:before {
+	content 	: "\2022";
+	font-size 	: 17px;
+	@include checkRadioafter;
+}
+input[type="radio"]:checked:before {
+	color: #00a79d;
+}
+
+input[type="file"]{
+	height:auto;
+	padding:12px;
+}
+/*input.button[type="submit"],
+input.button[type="button"]{
+	width:auto;
+}
+*/
+label{
+	display 	:block;
+	padding-top :8px;
+	color: #5c5c5c;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+::-webkit-input-placeholder { color: $col-placeholder; }
+:-moz-placeholder { color: $col-placeholder; }
+::-moz-placeholder { color: $col-placeholder; }
+:-ms-input-placeholder { color: $col-placeholder; }
+
+.nopadding { padding:0; }
+
+.formRow {
+	margin-bottom: 18px;
+	position: relative;
+	label{
+		margin 	 	: 0;
+		padding  	: 5px 0 0 15px;
+		font-size	: 10px;
+		line-height : 1;
+	}	
+	
+	&.formSubmit{ margin-bottom: 0; }
+	&.error, .error,
+	&.success, .success{
+	&:before{
+			content 	: "";
+			position 	: absolute;
+			width 		: 15px;
+			height 		: 15px;
+			right 		: 3px;
+    		top 		: 3px;
+			z-index 	: 10;
+			font-size 	: 10px;
+			line-height : 15px;
+			text-align  : center;
+
+			font-family 	: 'fontname' !important;
+		    speak 			: none;
+		    font-style		: normal;
+		    font-weight		: normal;
+		    font-variant 	: normal;
+		    text-transform 	: none;
+		}
+	}
+	&.error, .error{
+		label{
+			color: $error-color;
+		}
+		&:before{
+			content : "\e905";
+			color 	: $error-color;
+		}
+	}
+	&.success, .success{
+		label{
+			color: $success-color;
+		}
+		&:before{
+			content: "\e904";
+		}
+	}
+}
+
+textarea.form-control { min-height: 180px; }
+
+.form-control {
+	color 		: #444;
+	border 		: 1px solid #f0f0f0;
+	background 	: #f0f0f0;
+	box-shadow 	: none;
+    padding 	: 12px;
+    height 		: 44px;
+    @include border-radius(0);
+}
+
+select.form-control {
+	-moz-appearance: 	none;
+	-webkit-appearance: none;
+	-ms-appearance: 	none;
+	-o-appearance: 		none;
+	appearance: 		none;
+
+	background: #f0f0f0 url(../img/select-arow.png) no-repeat 95% center;
+	padding-right: 15px;
+}
+select::-ms-expand { display: none; }
+
+.form-control:focus{
+	border-color 		: #ddd;
+	background-color	: #fff;
+	@include box-shadow(none);
+}
+ 
+/*  Custom Upload  */
+.upload {
+	position: relative;
+	input[type=file]{
+		position 			: absolute;
+		width 				: 100%;
+		height 				: 100%;
+		left				: 0;
+		top					: 0;
+		-webkit-appearance 	: none;
+		-moz-appearance 	: none;
+		appearance 			: none;
+		z-index				: 50;
+		opacity				: 0;
+	}
+}
+.form-group .row { padding-bottom: 23px; }
+
+.form-group{
+
+	::-webkit-input-placeholder { color: #555555; }
+	:-moz-placeholder { color: #555555; }
+	::-moz-placeholder { color: #555555; }
+	:-ms-input-placeholder { color: #555555; }
+
+	h5 {
+		text-align: center;
+        padding-bottom: 25px;
+        font-size:20px;
+        line-height:26px;
+        margin-bottom: 0;
+	}
+	h6{
+	    padding: 25px 0 25px 25px;
+        text-align: left;	 
+        margin-bottom: 0;   
+	}
+    
+}
+
+.form-information {
+	padding: 15px 0 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+    color:#5c5c5c;
+
+    a {border-bottom: 1px solid #bfbfbf; }
+}
+
+.form-info { 
+	text-transform: uppercase;
+	font-family: $gotham-font-medium;
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+
+// Custom radio-box styling --------------------------
+
+.radio-box {
+	display: inline-block;
+	position: relative;
+
+	input[type=radio] {
+		position: absolute;
+		visibility: hidden;
+		width: 0;
+		height: 0;
+		
+		&:checked ~ label .check::before{ background: #000; }
+	}
+
+	label{
+		display: inline-block;
+		position: relative;
+		padding: 0;
+		cursor: pointer;
+		margin-bottom: 0;
+	}
+
+	.check {
+		display: inline-block;
+		position: relative;
+		border-radius: 100%;
+		height: 26px;
+		width: 26px;
+		vertical-align: middle;
+	    background: #f0f0f0;
+        margin-right: 10px;
+	    -webkit-transition: all 0.25s linear;
+		transition: all .25s linear;
+
+		&:before {
+			display: block;
+			position: absolute;
+			content: '';
+			border-radius: 100%;
+			height: 10px;
+			width: 10px;
+			top: 8px;
+			left: 8px;
+			margin: auto;
+			-webkit-transition: all 0.25s linear;
+			transition: all 0.25s linear;
+		}
+	}
+}

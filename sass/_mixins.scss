@@ -1,0 +1,187 @@
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin box-shadow($shadowprop...) {
+  -webkit-box-shadow: $shadowprop;
+     -moz-box-shadow: $shadowprop;
+      -ms-box-shadow: $shadowprop;
+          box-shadow: $shadowprop;
+}
+@mixin transition($transprop...) {
+  -webkit-transition: $transprop;
+  	-moz-transition: $transprop;
+  	-ms-transition: $transprop;
+  	-o-transition: $transprop;
+  		transition: $transprop;
+}
+
+@mixin transform-style( $transtyle... ) {
+  -webkit-transform-style: $transtyle;
+    -moz-transform-style: $transtyle;
+    -ms-transform-style: $transtyle;
+    -o-transform-style: $transtyle;
+      transform-style: $transtyle;
+}
+
+@mixin transform-rotate($degree) {
+	-webkit-transform: rotate($degree + deg);
+		-moz-transform: rotate($degree + deg);
+    -ms-transform: rotate($degree + deg);
+		-o-transform: rotate($degree + deg);
+		transform: rotate($degree + deg);
+}
+@mixin transform-scale($val) {
+  -webkit-transform: scale($val);
+    -moz-transform: scale($val);
+    -ms-transform: scale($val);
+    -o-transform: scale($val);
+    transform: scale($val);
+}
+@mixin transform-rotateY($degree) {
+  -webkit-transform: rotateY($degree + deg);
+    -moz-transform: rotateY($degree + deg);
+    -ms-transform: rotateY($degree + deg);
+    -o-transform: rotateY($degree + deg);
+    transform: rotateY($degree + deg);
+}
+@mixin transform-translate($valx, $valy) {
+  -webkit-transform: translate($valx, $valy);
+    -moz-transform: translate($valx, $valy);
+    -ms-transform: translate($valx, $valy);
+    -o-transform: translate($valx, $valy);
+    transform: translate($valx, $valy);
+}
+@mixin transform-translateY($val) {
+  -webkit-transform: translateY($val);
+    -moz-transform: translateY($val);
+    -ms-transform: translateY($val);
+    -o-transform: translateY($val);
+    transform: translateY($val);
+}
+@mixin transform-translateX($val2) {
+  -webkit-transform: translateX($val2);
+    -moz-transform: translateX($val2);
+    -ms-transform: translateX($val2);
+    -o-transform: translateX($val2);
+    transform: translateX($val2);
+}
+@mixin transform-translateX-rotate($valx, $degree) {
+    -webkit-transform: translateX($valx) rotate($degree + deg);
+    -moz-transform: translateX($valx) rotate($degree + deg);
+    -ms-transform: translateX($valx) rotate($degree + deg);
+    -o-transform: translateX($valx) rotate($degree + deg);
+    transform: translateX($valx) rotate($degree + deg);
+}
+@mixin transform-rotateY-scale($degree, $val) {
+  -webkit-transform: rotateY($degree + deg) scale($val);
+    -moz-transform: rotateY($degree + deg) scale($val);
+    -ms-transform: rotateY($degree + deg) scale($val);
+    -o-transform: rotateY($degree + deg) scale($val);
+    transform: rotateY($degree + deg) scale($val);
+}
+@mixin transform-skew($degreeX, $degreeY:0) {
+  -webkit-transform: skew($degreeX + deg, $degreeY + deg);
+    -moz-transform: skew($degreeX + deg, $degreeY + deg);
+    -ms-transform: skew($degreeX + deg, $degreeY + deg);
+    -o-transform: skew($degreeX + deg, $degreeY + deg);
+    transform: skew($degreeX + deg, $degreeY + deg);
+}
+@mixin transform-skew-rotate($degreeSkewX, $degreeRotate) {
+  -webkit-transform: skew($degreeSkewX + deg) rotate($degreeRotate + deg);
+    -moz-transform: skew($degreeSkewX + deg) rotate($degreeRotate + deg);
+    -ms-transform: skew($degreeSkewX + deg) rotate($degreeRotate + deg);
+    -o-transform: skew($degreeSkewX + deg) rotate($degreeRotate + deg);
+    transform: skew($degreeSkewX + deg) rotate($degreeRotate + deg);
+}
+
+@mixin transform-rotate-skew($degreeRotate, $degreeSkewX) {
+  -webkit-transform: rotate($degreeRotate + deg) skew($degreeSkewX + deg);
+    -moz-transform: rotate($degreeRotate + deg) skew($degreeSkewX + deg);
+    -ms-transform: rotate($degreeRotate + deg) skew($degreeSkewX + deg);
+    -o-transform: rotate($degreeRotate + deg) skew($degreeSkewX + deg);
+    transform: rotate($degreeRotate + deg) skew($degreeSkewX + deg);
+}
+
+@mixin transform-origin($val...){
+    -webkit-transform-origin: $val;
+       -moz-transform-origin: $val;
+        -ms-transform-origin: $val;
+         -o-transform-origin: $val;
+            transform-origin: $val;
+}
+@mixin perspective($persp) {
+ -webkit-perspective:  $persp + px;
+    -moz-perspective:  $persp + px;
+     -ms-perspective:  $persp + px;
+      -o-perspective:  $persp + px;
+         perspective:  $persp + px;
+}
+
+@mixin columns($count, $gap){
+  -webkit-column-count: $count;
+  -moz-column-count: $count;
+  column-count: $count;
+
+  -webkit-column-gap: $gap;
+  -moz-column-gap: $gap;
+  column-gap: $gap;
+}
+
+@mixin displayflex(){
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+}
+@mixin flex-wrap($val){
+  -webkit-flex-wrap: $val;
+  -moz-flex-wrap: $val;
+  -ms-flex-wrap: $val;
+  flex-wrap: $val;
+}
+@mixin flex($val...){
+  -webkit-flex: $val;
+  -moz-flex: $val;
+  -ms-flex: $val;
+  flex: $val;
+}
+@mixin flexflow($val...){
+  -webkit-flex-flow: $val;
+  -moz-flex-flow: $val;
+  -ms-flex-flow: $val;
+  flex-flow: $val;
+}
+@mixin flex-alignitems($val){
+  -webkit-align-items: $val;
+  -moz-align-items: $val;
+  -ms-align-items: $val;
+  align-items: $val;
+}
+
+@mixin userSelect($val){
+  -webkit-user-select: $val;
+  -moz-user-select: $val;
+  -ms-user-select: $val;
+  user-select: $val;
+}
+
+@mixin backface-visibility( $bv... ) {
+  -webkit-backface-visibility: $bv;
+    -moz-backface-visibility: $bv;
+    -ms-backface-visibility: $bv;
+    -o-backface-visibility: $bv;
+      backface-visibility: $bv;
+}
+
+// Tab Navigation - Services and others
+
+@mixin tabs( $number ){
+    &:first-child:nth-last-child(#{$number}),
+    &:first-child:nth-last-child(#{$number}) ~ a {
+      width: 100% / $number;
+    }
+}

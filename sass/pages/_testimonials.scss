@@ -1,0 +1,59 @@
+
+/* Testmonial page -------------------------- */
+
+.testmonial {
+    padding: 54px 0 0 0;
+    position:relative;    
+}
+.testmonial-form {
+	padding-top: 70px;
+	margin-top: 30px;
+	border-top: #ebebeb 1px solid;
+}
+
+.grid-sizer,
+.grid-item {
+    width: 31%;   
+    
+}
+
+.grid-item { margin-bottom:40px; }
+.gutter-sizer{ width:3.5%; }
+
+.testmonial-content {
+	padding: 65px 40px 37px 40px;
+	border: 1px solid #ddd;
+
+	&:before{
+		content: ' ';
+	    left: 40px;
+	    position: absolute;
+	    top: -13px;
+	    width: 75px;
+	    height: 54px;
+	    display: inline-block;
+	    background: url('../img/sprite.png') -100px -191px no-repeat; 
+	}	
+	p{
+	    font-size: 14px;
+	    line-height: 22px;
+	    margin-bottom: 21px;		
+	}
+	h5{
+		font-size: 14px;
+	    line-height: 26px;	
+	    font-family: $gotham-font-bold; 
+	    margin-bottom: 0;
+	}
+}
+
+.testmonial-form {
+	padding: 0 0 23px 0;
+
+	h3 { 
+		padding: 63px 0 0 0; 
+		margin-bottom: 0;
+	}
+	.form-group{ margin-top:14px; } 
+}
+

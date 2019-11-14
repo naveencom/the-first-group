@@ -1,0 +1,65 @@
+
+/* Header Tab Navigation --------------------------- */
+
+.header-tab-nav { position: relative; }
+
+.top-tab-nav {
+	width: 100%;
+	height: 70px;
+	display: table;
+	table-layout: fixed;
+	z-index: 1;
+
+	a {
+		background: #f0f0f0;
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		font-size: 14px;
+		line-height: 15px;
+		color: #000;
+		font-family: $gotham-font-regular;
+		text-transform: uppercase;
+		padding: 5px;
+		border: 0;
+
+		@include transition(all 0.3s ease-in);
+
+		&.tab-active {
+			background: #fff;
+			position: relative;
+			top: -10px;
+			z-index: 0;
+		}
+
+		&:hover {background: #fff; }
+
+		@include tabs(5);
+		@include tabs(6);
+	}
+}
+
+.tab-toggle {
+	display: none;
+	height: 58px;
+	width: 58px;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	background: #f0f0f0 url('../img/sprite.png') -52px -470px no-repeat;
+
+	&.tab-dropped { 
+		background: #f0f0f0 url('../img/sprite.png') -136px -470px no-repeat;
+	}
+}
+
+.tab-active-page {
+	display: none;
+	height: 58px;
+	padding: 21px 60px 21px 25px;
+	border-bottom: 1px solid #f0f0f0;
+	font-size: 14px;
+	text-transform: uppercase;
+}

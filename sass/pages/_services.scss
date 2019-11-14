@@ -1,0 +1,61 @@
+
+/* Services pages -------------------------- */
+
+.content-area {
+	padding: 54px 0;
+	text-align: center;
+}
+
+.title-area {
+	padding: 54px 0	5px 0;
+	text-align: center;
+}
+
+.title-area .title,
+.content-area .title {
+	font-size: 30px; 
+	max-width: 600px;
+}
+
+.content-fixed {
+	max-width: 650px;
+	margin: 0 auto;
+	padding: 0 2em;
+}
+
+.pic-box-wrapper {
+	height: auto;
+
+	.table-cell { padding: 5% 0;}
+	.table-block { height: 530px; }
+	.cta {margin-top: 35px; }
+
+	p {
+		width: 50%; 
+		margin: 0 auto;
+	}
+}
+
+.pic-box-title {
+	font-size: 40px;
+	line-height: 1.2;
+	margin-bottom: 25px;
+    padding: 0 20%;
+    text-align: center; 
+    font-family: $gotham-font-thin;
+    text-shadow: 1px 1px 8px rgba(0,0,0,0.3);
+}
+
+.service-efirst {
+	margin-top: 130px;
+    padding-bottom: 80px;
+    
+	.cta {margin-top: 10px;}
+} 
+
+
+
+
+
+
+
